@@ -1,0 +1,103 @@
+\begin{gather*}
+        \qty{\gamma^\mu,\gamma^\nu} = 2g^{\mu\nu}
+        \quad
+        \gamma_5
+        = +i\gamma^0\gamma^1\gamma^2\gamma^3
+        = -i\gamma_0\gamma_1\gamma_2\gamma_3
+        = -\frac{i}{4!}\epsilon^{\alpha\beta\gamma\delta} \gamma^\alpha\gamma^\beta\gamma^\gamma\gamma^\delta
+        \quad
+        \\
+        \sigma^{\mu\nu} = \frac{i}{2}\qty[\gamma^\mu,\gamma^\nu]
+        \implies \qty[\gamma^\mu,\gamma^\nu] = -2i\sigma^{\mu\nu}
+        \qquad
+        \qty{\gamma_5,\gamma^\mu} = 0
+        \gamma_5\gamma_5 = +\1b
+\end{gather*}
+
+\resizebox{\linewidth}{!}{\begin{tabular}{|ccccc|}\specialrule{\cmidrulewidth}{0pt}{0pt}
+        $\1b$
+            &$\gamma_5$
+            &$\gamma^\mu$
+            &$\gamma_5\gamma^\mu$
+            &$\sigma^{\mu\nu}$
+        \\
+        $\gamma_5$
+            &$\1b$
+            &$+\gamma_5\gamma^\mu$
+            &$+\gamma^\mu$
+            &$\frac{i}{2}\epsilon^{\mu\nu\pi\rho}\sigma_{\pi\rho}$
+        \\
+        $\gamma^\alpha$
+            &$-\gamma_5\gamma^\alpha$
+            &$g^{\alpha\mu} - i\sigma^{\alpha\mu}$
+            &$-\frac{1}{2}\qty(2g^{\alpha\mu}\gamma_5 + \epsilon^{\alpha\mu\pi\rho}\sigma_{\pi\rho})$
+            &$\epsilon^{\alpha\mu\nu\lambda}\gamma_5\gamma_\lambda + ig^{\alpha\mu}\gamma^\nu - ig^{\alpha\nu}\gamma^\mu$
+        \\
+        $\gamma_5\gamma^\alpha$
+            &$-\gamma^\alpha$
+            &$-\gamma^\alpha$
+            &$-\qty(g^{\alpha\mu} - i\sigma^{\alpha\mu})$
+            &$\epsilon^{\alpha\mu\nu\lambda}\gamma_\lambda + ig^{\alpha\mu}\gamma_5\gamma^\nu - ig^{\alpha\nu}\gamma_5\gamma^\mu$
+        \\
+        $\sigma^{\alpha\beta}$
+            &$\sigma^{\alpha\beta}$
+            &$\epsilon^{\alpha\beta\mu\lambda}\gamma_5\gamma_\lambda + ig^{\beta\mu}\gamma^\alpha - ig^{\alpha\mu}\gamma^\beta$
+            &$\epsilon^{\alpha\beta\mu\lambda}\gamma_\lambda + ig^{\beta\mu}\gamma_5\gamma^\alpha - ig^{\alpha\mu}\gamma_5\gamma^\beta$
+            &$i\epsilon^{\alpha\beta\mu\nu}\gamma_5 + g^{\alpha\mu}g^{\beta\nu} - g^{\alpha\nu}g^{\beta\mu} + i\qty[g^{\alpha\nu}\sigma^{\beta\mu} + g^{\beta\mu}\sigma^{\alpha\nu} - g^{\alpha\mu}\sigma^{\beta\nu} - g^{\beta\nu}\sigma^{\alpha\mu}]$
+        \\\specialrule{\cmidrulewidth}{0pt}{0pt}
+\end{tabular}}
+
+\begin{gather*}
+    \slashed{A} = A^\mu\gamma_\mu
+    \qquad
+    \gamma^\mu\gamma_\mu = 4
+    \qquad
+    %\gamma^\mu\slashed{a}\gamma_\mu = -2\slashed{a}
+    \gamma^\mu\gamma^\nu\gamma_\mu = -2\gamma^\nu
+    \qquad
+    %\gamma^\mu\slashed{a}\slashed{b}\gamma_\mu = 4a\cdot b
+    \gamma^\mu\gamma^\nu\gamma^\rho\gamma_\mu = 4g^{\mu\nu}
+    \qquad
+    %\gamma^\mu\slashed{a}\slashed{b}\slashed{c}\gamma_\mu = -2\slashed{c}\slashed{b}\slashed{a}
+    \\
+    \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma_\mu = -2\gamma^\nu\gamma^\rho\gamma^\sigma
+    \qquad
+    %\gamma^\mu\slashed{a}\slashed{b}\slashed{c}\slashed{d}\gamma_\mu = 2\qty[\slashed{d}\slashed{a}\slashed{b}\slashed{c} + \slashed{c}\slashed{b}\slashed{a}\slashed{d}]
+    \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^\pi\gamma_\mu = 2\qty[\gamma^\pi\gamma^\nu\gamma^\rho\gamma^\sigma + \gamma^\sigma\gamma^\rho\gamma^\nu\gamma^\pi]
+\end{gather*}
+
+\begin{gather*}
+    \gamma_L = \frac{1 - \gamma_5}{2}
+    \qquad
+    \gamma_R = \frac{1 + \gamma_5}{2}
+    \qquad
+    \gamma_{L,R}^2 = \gamma_{L,R}
+    \qquad
+    \gamma_{L,R}\gamma_{R,L} = 0
+    \\
+    \gamma^\mu\gamma_{L,R} = \gamma_{R,L}\gamma^\mu
+    \qquad
+    \gamma_5\gamma_{L} = \gamma_{L}\gamma_5 = -\gamma_{L}
+    \qquad
+    \gamma_5\gamma_{R} = \gamma_{R}\gamma_5 = \gamma_{R}
+\end{gather*}
+
+\begin{gather*}
+    \begin{alignedat}{3}
+        &\Tr[\1b] = 4
+        \qquad
+        &&\mathrm{Tr}[\underbrace{\gamma^\mu\gamma^\nu\dots\gamma^\rho}_{\mathclap{\text{Odd Number}}}] = 0
+        \qquad
+        &&\Tr[\gamma^\mu\gamma^\nu] = 4g^{\mu\nu}
+        \\
+        &\Tr[\gamma_5] = 0
+        \qquad
+        &&\mathrm{Tr}[\gamma_5\underbrace{\gamma^\mu\gamma^\nu\dots\gamma^\rho}_{\mathclap{\text{Odd Number}}}] = 0
+        \qquad
+        &&\Tr[\gamma_5\gamma^\mu\gamma^\nu] = 0
+    \end{alignedat}
+    \\
+    \Tr[\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma] = 4\qty(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho})
+    \qquad
+    \Tr[\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma] = -4i\epsilon^{\mu\nu\rho\sigma}
+\end{gather*}

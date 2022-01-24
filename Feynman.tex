@@ -1,0 +1,130 @@
+Goes in opposite way of arrows with the first one being adjoint, $\overline{\psi} = \psi^\dagger\gamma^0$:
+\begin{figure}[H]\centering
+    \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+            i[particle=f] -- [fermion, edge label'=\ce{u}] f[dot],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+                i[dot] -- [fermion, edge label'=\(\mathrm{\overline{u}}\)] f[particle=\(\mathrm{f}\)],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\(\mathrm{\overline{f}}\)] -- [anti fermion, edge label'=\(\mathrm{\overline{v}}\)] f[dot],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+                i[dot] -- [anti fermion, edge label'=v] f[particle=\(\mathrm{\overline{f}}\)],
+    };\\
+    \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\ce{\gamma}] -- [photon, edge label'=\ce{\epsilon_\mu}] f[dot],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+                i[dot] -- [photon, edge label'=\ce{\epsilon_\mu^*}] f[particle=\ce{\gamma}],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=g] -- [gluon, edge label'=\ce{\epsilon_\mu}] f[dot],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+                i[dot] -- [gluon, edge label'=\ce{\epsilon_\mu^*}] f[particle=g],
+    };
+\end{figure}
+
+\begin{figure}[H]\centering
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+        i[dot] -- [fermion,
+            edge label' = \(\frac{i}{\gamma^\mu q_\mu - m}\),
+            edge label  = \ce{f}]
+        f[dot],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+        i[dot] -- [photon,
+            edge label' = \(\frac{-ig_{\mu\nu}}{q^2}\),
+            edge label  = \ce{\gamma}]
+        f[dot],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+        i[dot] -- [gluon,
+            edge label' = \(\frac{-ig_{\mu\nu}}{q^2}\delta^{ab}\),
+            edge label  = \ce{g}]
+        f[dot],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+        i[dot] -- [boson,
+            edge label' = \(\frac{-i(g_{\mu\nu} - q_\mu q_\nu/m^2)}{q^2 - m^2 + im\Gamma}\),
+            edge label  = \ce{W^\pm/Z}]
+        f[dot],
+    };\hfill
+    \feynmandiagram[horizontal=i to f,inline=(i.base)] {
+        i[dot] -- [charged scalar,
+            edge label' = \(\frac{i}{q^2 - m^2}\),
+            edge label  = \ce{H}]
+        f[dot],
+    };
+\end{figure}
+
+\begin{figure}[H]\centering
+        \hfill
+        \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\ce{\gamma}] -- [photon] f[dot, label=0:\(-iQ_fe\gamma^\mu\)],
+                a1[particle=\(\mathrm{\overline{f}}\)] --[fermion] f --[fermion] a2[particle=\ce{f}],
+        };\hfill
+        \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\ce{g}] -- [gluon] f[dot, label=0:\(-i\frac{g_s}{2}\lambda^a\gamma^\mu\)],
+                a1[particle=\(\mathrm{\overline{q}}\)] --[fermion] f --[fermion] a2[particle=\ce{q}],
+        };\hfill
+        \null\\
+        \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\ce{W^\pm}] -- [boson] f[dot, label=0:\(-i\frac{g_W}{\sqrt{2}}\gamma^\mu\gamma_L\)],
+                a1[particle=\(\ell^\pm\)] --[fermion] f --[fermion] a2[particle=\ce{\nu_\ell}],
+        };\hfill
+        \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\ce{W^\pm}] -- [boson] f[dot, label=0:\(-i\frac{g_W}{\sqrt{2}}\gamma^\mu\gamma_LV_{ij}\)],
+                a1[particle = \ce{q_i}] --[fermion] f --[fermion] a2[particle = \ce{q_j}],
+        };\hfill
+        \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=Z] -- [boson] f[dot, label=0:\(-ig_Z(g_V^f-g_A^f\gamma_5)\)],
+                a1[particle = \(\mathrm{\overline{f}}\)] --[fermion] f --[fermion] a2[particle = f],
+        };
+        \null\\
+        \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\ce{h}] -- [scalar] f[dot, label=0:\(-i\frac{g_W}{2}\frac{m_f}{m_W}\)],
+                a1[particle = \(\mathrm{\overline{f}}\)] --[fermion] f --[fermion] a2[particle = f],
+        };\hfill
+        \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\ce{h}] -- [scalar] f[dot, label=0:\(ig_Wm_Wg_{\mu\nu}\)],
+                a1[particle = \ce{W^+}] --[boson] f --[boson] a2[particle = \ce{W^-}],
+        };\hfill
+        \feynmandiagram[horizontal=i to f,inline=(f.base)] {
+                i[particle=\ce{h}] -- [scalar] f[dot, label=0:\(ig_Zm_Zg_{\mu\nu}\)],
+                a1[particle=\ce{Z}] --[boson] f --[boson] a2[particle=\ce{Z}],
+        };
+\end{figure}
+
+\begin{align*}
+        s
+        &= (p_1 + p_2)^2 = (p_3 + p_4)^2
+        \approx +2p_1\cdot p_2 \approx +2p_3\cdot p_4
+        &&
+        \sqrt{s} = E_{CM}
+        \\
+        t
+        &= (p_1 - p_3)^2 = (p_2 - p_4)^2
+        \approx -2p_1\cdot p_3 \approx -2p_2\cdot p_4
+        &&
+        s + t + u = m_1^2 + m_2^2 + m_3^2 + m_4^2
+        \\
+        u
+        &= (p_1 - p_4)^2 = (p_2 - p_3)^2
+        \approx -2p_1\cdot p_4 \approx -2p_2\cdot p_3
+\end{align*}
+\begin{gather*}
+        \frac{G_F}{\sqrt{2}} = \frac{g_W^2}{8M_W^2} = \frac{g_W^2}{8M_Z^2\cos[2](\theta_W)} = \frac{1}{2v^2}
+        \qquad
+        g_W = g_Z\cos\theta_W = \frac{e}{\sin\theta_W}
+        \\
+        g_V^f = \frac{1}{2}T_f^3 - Q_f\sin[2](\theta_W)
+        \qquad
+        g_A^f = \frac{1}{2}T_f^3
+        \qquad
+        M_W = M_Z\cos\theta_W = \frac{1}{2}g_Wv
+        \qquad
+        m_H = \sqrt{2\lambda}v
+\end{gather*}
+

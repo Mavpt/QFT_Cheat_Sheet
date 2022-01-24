@@ -1,0 +1,61 @@
+% ----- Font -----
+%\defaultfontfeatures{Ligatures=TeX}
+%\setmainfont{LibertinusSerif}
+%\setsansfont{LibertinusSans}
+%\setmonofont{LibertinusMono}
+%
+%\unimathsetup{math-style=TeX}
+%\setmathfont{LibertinusMath}
+
+% ----- Paragraph Formatting -----
+\SetLanguageKeys{english}{indentfirst=true}
+%\setlength{\parindent}{4em}
+%\setlength{\parskip}{1em}
+%\renewcommand{\baselinestretch}{1.0}
+%\setlength{\baselineskip}{1em}
+%\linespread{1.0}
+
+% ----- Sections -----
+%\renewcommand{\thechapter}{}
+\titleformat{\chapter}[display]
+{\centering\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter} {0pt}{50pt}{40pt}
+
+%\renewcommand{\thesection}{\arabic{section}}
+\titleformat{\section}
+{\centering\normalfont\Large\bfseries}{\thesection.}{1em}{}
+\titlespacing*{\section} {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+%\renewcommand{\thesubsection}{\alph{subsection}}
+\titleformat{\subsection}
+{\centering\normalfont\large\bfseries}{\thesubsection)}{1em}{}
+\titlespacing*{\subsection} {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%\renewcommand{\thesubsection}{\alph{subsection}}
+\titleformat{\subsubsection}
+{\centering\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%\renewcommand{\theparagraph}{}
+\titleformat{\paragraph}[runin]
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1em}
+
+%\renewcommand{\thesubparagraph}{}
+\titleformat{\subparagraph}[runin]
+{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}
+\titlespacing*{\subparagraph} {\parindent}{3.25ex plus 1ex minus .2ex}{1em}
+
+% ----- Floats -----
+%\newcommand{\source}[1]{\hfill Fonte: #1}
+
+% ----- References -----
+%\numberwithin{equation}{section}
+
+% ----- siunitx -----
+%\sisetup{separate-uncertainty=true}
+
+% ----- Overfull Boxes -----
+\setlength{\columnsep}{0.5em}
+\setlength{\columnseprule}{1pt}
+\overfullrule=1mm
