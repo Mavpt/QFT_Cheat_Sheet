@@ -72,20 +72,23 @@
 \end{tabular}}
 
 \begin{gather*}
-    \slashed{A} = A^\mu\gamma_\mu
-    \qquad
-    \gamma^\mu\gamma_\mu = 4
-    \qquad
-    %\gamma^\mu\slashed{a}\gamma_\mu = -2\slashed{a}
-    \gamma^\mu\gamma^\nu\gamma_\mu = -2\gamma^\nu
-    \qquad
-    %\gamma^\mu\slashed{a}\slashed{b}\gamma_\mu = 4a\cdot b
-    \gamma^\mu\gamma^\nu\gamma^\rho\gamma_\mu = 4g^{\mu\nu}
-    \qquad
-    %\gamma^\mu\slashed{a}\slashed{b}\slashed{c}\gamma_\mu = -2\slashed{c}\slashed{b}\slashed{a}
-    \\
-    \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma_\mu = -2\gamma^\nu\gamma^\rho\gamma^\sigma
-    \qquad
-    %\gamma^\mu\slashed{a}\slashed{b}\slashed{c}\slashed{d}\gamma_\mu = 2\qty[\slashed{d}\slashed{a}\slashed{b}\slashed{c} + \slashed{c}\slashed{b}\slashed{a}\slashed{d}]
-    \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^\pi\gamma_\mu = 2\qty[\gamma^\pi\gamma^\nu\gamma^\rho\gamma^\sigma + \gamma^\sigma\gamma^\rho\gamma^\nu\gamma^\pi]
+        \slashed{A} = A^\mu\gamma_\mu
+        \qquad
+        \gamma^\mu\gamma_\mu = 4
+        \qquad
+        %\gamma^\mu\slashed{a}\gamma_\mu = -2\slashed{a}
+        \gamma^\mu\gamma^\nu\gamma_\mu = -2\gamma^\nu
+        \qquad
+        %\gamma^\mu\slashed{a}\slashed{b}\gamma_\mu = 4a\cdot b
+        \gamma^\mu\gamma^\nu\gamma^\rho\gamma_\mu = 4g^{\nu\rho}
+        \qquad
+        %\gamma^\mu\slashed{a}\slashed{b}\slashed{c}\gamma_\mu = -2\slashed{c}\slashed{b}\slashed{a}
+        \\
+        \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma_\mu = -2\gamma^\sigma\gamma^\rho\gamma^\nu
+        \qquad
+        %\gamma^\mu\slashed{a}\slashed{b}\slashed{c}\slashed{d}\gamma_\mu = 2\qty[\slashed{d}\slashed{a}\slashed{b}\slashed{c} + \slashed{c}\slashed{b}\slashed{a}\slashed{d}]
+        \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^\pi\gamma_\mu = 2\qty[\gamma^\pi\gamma^\nu\gamma^\rho\gamma^\sigma + \gamma^\sigma\gamma^\rho\gamma^\nu\gamma^\pi]
+        \\
+        \gamma^\mu\gamma^\nu\gamma^\rho
+        = i\epsilon^{\mu\nu\rho\lambda} \gamma_\lambda \gamma_5 + g^{\mu\nu}\gamma^\rho - g^{\mu\rho}\gamma^\nu + g^{\nu\rho}\gamma^\mu
 \end{gather*}
