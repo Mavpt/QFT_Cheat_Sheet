@@ -1,0 +1,56 @@
+\begin{gather*}
+        \sigma^\mu=\qty(\mathbb{1},\va*{\sigma})
+        \qquad
+        \overline{\sigma}^\mu=\qty(\mathbb{1},-\va*{\sigma})
+        \\
+        \sigma^1 = \sigma_x = \begin{pmatrix}
+                0 &1\\
+                1 &0
+        \end{pmatrix}
+        \quad
+        \sigma^2 = \sigma_y = \begin{pmatrix}
+                0 &-i\\
+                i &0
+        \end{pmatrix}
+        \quad
+        \sigma^3 = \sigma_z = \begin{pmatrix}
+                1 &0\\
+                0 &-1
+        \end{pmatrix}
+        \quad
+        \va*{\Sigma} = \begin{pmatrix}
+                \va*{\sigma} &0\\
+                0 &\va*{\sigma}\\
+        \end{pmatrix}
+        \\
+        \acomm{\sigma^i}{\sigma^j} = 2\delta^{ij}
+        \qquad
+        \comm{\sigma^i}{\sigma^j} = 2i\epsilon^{ijk}\sigma^k
+        \qquad
+        \sigma^i\sigma^j = \delta^{ij} + i\epsilon^{ijk}\sigma^k
+        \qquad
+        \sigma^2\sigma^i\sigma^2 = -\qty(\sigma^i)^*
+        \\
+        \va*{\sigma}\vdot\va{p} = \begin{pmatrix}
+                p_z      &p_x-ip_y \\
+                p_x+ip_y &-p_z     \\
+        \end{pmatrix}
+        \qquad
+        \qty(\va*{\sigma}\vdot\va{p})^2 = \abs{\va{p}}^2
+        \qquad
+        \qty(p\cdot\sigma)\qty(p\cdot\overline{\sigma}) = p^2
+        \\
+        p\cdot\overline{\sigma} = \begin{pmatrix}
+                p^0+p^3  &p^1-ip^2 \\
+                p^1+ip^2 &p^0-p^3  \\
+        \end{pmatrix}
+        \qquad
+        p\cdot\sigma = \begin{pmatrix}
+                p^0 - p^3       &-\qty(p^1-ip^2) \\
+                -\qty(p^1+ip^2) &p^0+p^3         \\
+        \end{pmatrix}
+        \\
+        \sqrt{p\cdot\sigma} = \frac{E + m - \va*{\sigma}\vdot\va{p}}{\sqrt{2(E+m)}}
+        \qquad
+        \sqrt{p\cdot\overline{\sigma}} = \frac{E + m + \va*{\sigma}\vdot\va{p}}{\sqrt{2(E+m)}}
+\end{gather*}
