@@ -29,7 +29,7 @@ Goes in opposite way of arrows with the first one being adjoint, $\overline{\psi
 \begin{figure}[H]\centering
     \feynmandiagram[horizontal=i to f,inline=(i.base)] {
         i[dot] -- [fermion,
-            edge label' = \(\frac{\slashed{p} + m}{p^2 - m_f^2 + i\epsilon}\),
+            edge label' = \(\frac{i\qty(\slashed{p} + m)}{p^2 - m_f^2 + i\epsilon}\),
             edge label  = \ce{f}]
         f[dot],
     };\hfill
@@ -41,13 +41,14 @@ Goes in opposite way of arrows with the first one being adjoint, $\overline{\psi
     };\hfill
     \feynmandiagram[horizontal=i to f,inline=(i.base)] {
         i[dot] -- [boson,
-            edge label' = \(-i\frac{g_{\mu\nu} - k_\mu k_\nu/M_Z^2}{k^2 - M_Z^2 + iM_Z\Gamma}\),
+            edge label' = \(-i\frac{g_{\mu\nu} - k_\mu k_\nu/M_Z^2}{k^2 - M_Z^2 + iM_Z\Gamma_Z}\),
             edge label  = \ce{Z}]
         f[dot],
     };\hfill
     \feynmandiagram[horizontal=i to f,inline=(i.base)] {
         i[dot] -- [scalar,
             edge label' = \(\frac{i}{p^2 - \xi_ZM_Z^2 + i\epsilon}\),
+            %edge label' = \(\frac{i}{p^2 + i\epsilon}\),
             edge label  = \ce{\varphi_Z}]
         f[dot],
     };\hfill
@@ -66,13 +67,14 @@ Goes in opposite way of arrows with the first one being adjoint, $\overline{\psi
     };\hfill
     \feynmandiagram[horizontal=i to f,inline=(i.base)] {
         i[dot] -- [boson,
-            edge label' = \(-i\frac{g_{\mu\nu} - k_\mu k_\nu/M_W^2}{k^2 - M_W^2 + iM_W\Gamma}\),
+            edge label' = \(-i\frac{g_{\mu\nu} - k_\mu k_\nu/M_W^2}{k^2 - M_W^2 + iM_W\Gamma_W}\),
             edge label  = \ce{W^\pm}]
         f[dot],
     };\hfill
     \feynmandiagram[horizontal=i to f,inline=(i.base)] {
         i[dot] -- [scalar,
             edge label' = \(\frac{i}{p^2 - \xi_WM_W^2 + i\epsilon}\),
+            %edge label' = \(\frac{i}{p^2 + i\epsilon}\),
             edge label  = \ce{\varphi^\pm}]
         f[dot],
     };\hfill
