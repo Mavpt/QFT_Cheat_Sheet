@@ -1,14 +1,30 @@
+Dirac Delta:
 \begin{equation*}
+        \Ddelta[n](x'-x) = i\int\frac{\dd[n]{p}}{\qty(2\pi)^n}e^{-ip(x'-x)}
+        \qquad
         f(x_i) = 0
         \implies
         \Ddelta[f(x)] = \sum_{i} \abs{\dv{f}{x}}_{x_i}^{-1}\cdot\Ddelta(x-x_i)
 \end{equation*}
 
+Triangle Function:
 \begin{equation*}
         \lambda(a,b,c) = \qty[a - \qty(\sqrt{b} + \sqrt{c})^2]\qty[a - \qty(\sqrt{b} - \sqrt{c})^2]
 \end{equation*}
 
+Residue Theorem:
 \begin{equation*}
-        \oint_\Gamma\dd{z} f(z) = 2\pi i \sum Res(f,x_k)
+        \oint_\Gamma\dd{z} f(z) = \pm2\pi i \sum_{k=1}^n \Res[f(a_k)]
+        \qquad
+        \Res[f(a_k)] = \lim_{z\to a_k}\qty(z-a_k)f(z)
 \end{equation*}
+The ``-'' (``+'') is used when $\Gamma$ is oriented clockwise (counterclockwise).
+
+\begin{align*}
+        f(z) = \frac{h(z)e^{-iz(t'-t)}}{\qty(z-a_1)\qty(z-a_2)\dots}
+        &\stackrel{t'-t<0}{\implies}
+        \int_{\Re(z)=-\infty}^{\Re(z)=+\infty}f(z) \dd{z} = + 2\pi i \sum_{a_k\text{ in UHP}}\Res[f(a_k)]
+        \\&\stackrel{t'-t>0}{\implies}
+        \int_{\Re(z)=-\infty}^{\Re(z)=+\infty}f(z) \dd{z} = - 2\pi i \sum_{a_k\text{ in LHP}}\Res[f(a_k)]
+\end{align*}
 
