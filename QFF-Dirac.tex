@@ -25,11 +25,21 @@
         \\
         \ket{e^-(p_1,s_1),e^-(p_2,s_2)} = b^\dagger(p_2,s_2)b^\dagger(p_1,s_1)\ket{0} = -\ket{e^-(p_2,s_2),e^-(p_1,s_1)}
         \\
-        \psi^+(b) \text{ destroys } \ce{e^-}
-        \quad
-        \psi^-(d^\dagger) \text{ creates } \ce{e^+}
-        \quad
-        \overline{\psi}^+(d) \text{ destroy } \ce{e^+}
-        \quad
-        \overline{\psi}^-(b^\dagger) \text{ creates } \ce{e^-}
+        \begin{aligned}
+                \psi^+(x)\ket{p} = \psi^+(x)b^\dagger(p)\ket{0} = \ket{0} u(p)e^{-ip\cdot x}
+                &\qquad
+                \psi^+(b) \text{ destroys } \ce{e^-}
+                \\
+                \overline{\psi}^+(x)\ket{p} = \overline{\psi}^+(x)d^\dagger(p)\ket{0} = \ket{0} \overline{v}(p)e^{-ip\cdot x}
+                &\qquad
+                \overline{\psi}^+(d) \text{ destroy } \ce{e^+}
+                \\
+                \bra{p}\psi^-(x) = \bra{0}d(p)\psi^-(x) = v(p)e^{+ip\cdot x}\bra{0}
+                &\qquad
+                \psi^-(d^\dagger) \text{ creates } \ce{e^+}
+                \\
+                \bra{p}\overline{\psi}^-(x) = \bra{0}b(p)\overline{\psi}^-(x) = \overline{u}(p)e^{+ip\cdot x}\bra{0}
+                &\qquad
+                \overline{\psi}^-(b^\dagger) \text{ creates } \ce{e^-}
+        \end{aligned}
 \end{gather*}

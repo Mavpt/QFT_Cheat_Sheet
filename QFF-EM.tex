@@ -15,14 +15,20 @@
         \comm{\dot{A}_\mu(\va{y},t)}{A_\nu(\va{x},t)}
         = ig_{\mu\nu}\Ddelta[3](\va{x}-\va{y})
         \\
-        A^\mu(x)
+        A_\mu(x)
         = A_\mu^+(x) + A_\mu^-(x)
-        = \int\Tdd{k} \sum_{\lambda=0}^3\qty[a(k,\lambda)\epsilon^\mu(k,\lambda)e^{-ik\cdot x} + a^\dagger(k,\lambda)\epsilon^{\mu *}(k,\lambda)e^{+ik\cdot x}]
+        = \int\Tdd{k} \sum_{\lambda=0}^3\qty[a(k,\lambda)\epsilon_\mu(k,\lambda)e^{-ik\cdot x} + a^\dagger(k,\lambda)\epsilon^*_\mu(k,\lambda)e^{+ik\cdot x}]
         \\
-        \comm{\dot{a}(k,\lambda)}{a^\dagger(k',\lambda')}
-        = - g^{\lambda\lambda'}\Tdelta(k-k')
-        \qquad
-        A^+(a) \text{ destroys } \ce{\gamma}
-        \quad
-        A^-(a^\dagger) \text{ creates } \ce{\gamma}
+        \begin{aligned}
+                A_\mu^+(x)\ket{k} = A_\mu^+(x)a^\dagger(k)\ket{0} = \ket{0}\epsilon_\mu(k)e^{-ik\cdot x}
+                &\qquad
+                \comm{\dot{a}(k,\lambda)}{a^\dagger(k',\lambda')}
+                = - g^{\lambda\lambda'}\Tdelta(k-k')
+                \\
+                \bra{k}A_\mu^-(x) = \bra{0}a(k)A_\mu^-(x) = \epsilon^*_\mu(k)e^{+ik\cdot x}\bra{0}
+                &\qquad
+                A^+(a) \text{ destroys } \ce{\gamma}
+                \quad
+                A^-(a^\dagger) \text{ creates } \ce{\gamma}
+        \end{aligned}
 \end{gather*}
