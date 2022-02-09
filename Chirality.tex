@@ -40,9 +40,7 @@
         \overline{\gamma_{L,R}}
         = \gamma_0\gamma_{L,R}^\dagger\gamma_0
         = \gamma_{R,L}
-\end{gather*}
-
-\begin{gather*}
+        \\
         u_L = u_\downarrow
         \qquad
         u_R = u_\uparrow
@@ -50,7 +48,9 @@
         v_L = v_\uparrow
         \qquad
         v_R = v_\downarrow
-        \\
+\end{gather*}
+
+\begin{gather*}
         \resizebox{\linewidth}{!}{$\displaystyle
                 P_Lu_\downarrow = u_\downarrow
                 \quad
@@ -121,40 +121,42 @@
         $}
 \end{gather*}
 
-\begin{gather*}
-        u_\uparrow = N \begin{pmatrix}
-                c\\se^{i\phi}\\kc\\kse^{i\phi}
+\begin{align*}
+        u_\uparrow^T = N \begin{pmatrix}
+                c&se^{i\phi}&kc&kse^{i\phi}
         \end{pmatrix}
         \approx N \begin{pmatrix}
-                c\\se^{i\phi}\\c\\se^{i\phi}
-        \end{pmatrix}\qquad
-        u_\downarrow = N \begin{pmatrix}
-                -s\\ce^{i\phi}\\ks\\-kce^{i\phi}
+                c&se^{i\phi}&c&se^{i\phi}
         \end{pmatrix}
-        \approx N \begin{pmatrix}
-                -s\\ce^{i\phi}\\s\\-ce^{i\phi}
-        \end{pmatrix}
+        &\qquad
+        N = \sqrt{E+m} \approx \sqrt{E}
         \\
-        v_\uparrow = N \begin{pmatrix}
-                ks\\-kce^{i\phi}\\-s\\ce^{i\phi}
+        u_\downarrow^T = N \begin{pmatrix}
+                -s&ce^{i\phi}&ks&-kce^{i\phi}
         \end{pmatrix}
         \approx N \begin{pmatrix}
-                s\\-ce^{i\phi}\\-s\\ce^{i\phi}
-        \end{pmatrix}\qquad
-        v_\downarrow = N \begin{pmatrix}
-                kc\\kse^{i\phi}\\c\\se^{i\phi}
+                -s&ce^{i\phi}&s&-ce^{i\phi}
+        \end{pmatrix}
+        &\qquad
+        k = \frac{p}{E+m} \approx 1
+        \\
+        v_\uparrow^T = N \begin{pmatrix}
+                ks&-kce^{i\phi}&-s&ce^{i\phi}
         \end{pmatrix}
         \approx N \begin{pmatrix}
-                c\\se^{i\phi}\\c\\se^{i\phi}
+                s&-ce^{i\phi}&-s&ce^{i\phi}
         \end{pmatrix}
+        &\qquad
+        s = \sin(\frac{\theta}{2})
+        \\
+        v_\downarrow^T = N \begin{pmatrix}
+                kc&kse^{i\phi}&c&se^{i\phi}
+        \end{pmatrix}
+        \approx N \begin{pmatrix}
+                c&se^{i\phi}&c&se^{i\phi}
+        \end{pmatrix}
+        &\qquad
+        c = \cos(\frac{\theta}{2})
         \\
         \va{p} = p\qty(\sin\theta\cos\phi , \sin\theta\sin\phi , \cos\theta)
-        \\
-        N = \sqrt{E+m} \approx \sqrt{E}
-        \qquad
-        k = \frac{p}{E+m} \approx 1
-        \qquad
-        s = \sin(\frac{\theta}{2})
-        \qquad
-        c = \cos(\frac{\theta}{2})
-\end{gather*}
+\end{align*}

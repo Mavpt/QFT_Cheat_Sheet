@@ -1,9 +1,8 @@
 \begin{gather*}
-        S_{fi} = \braket{f}{\Phi(\infty)} = \mel{f}{S}{i}
+        %S_{fi} = \braket{f}{\Phi(\infty)} = \mel{f}{S}{i}
+        S = \sum_{n=0}^{\infty}\frac{\qty(-i)^n}{n!}\int\dd[4]x_1\dd[4]x_2\dots\dd[4]x_n\Tordp(\Hc_{\mathrm{int}}(x_1)\Hc_{\mathrm{int}}(x_2)\dots\Hc_{\mathrm{int}}(x_n))
         \qquad
         \sum_f \abs{S_{fi}}^2 = 1
-        \\
-        S = \sum_{n=0}^{\infty}\frac{\qty(-i)^n}{n!}\int\dd[4]x_1\dd[4]x_2\dots\dd[4]x_n\Tordp(\Hc_{\mathrm{int}}(x_1)\Hc_{\mathrm{int}}(x_2)\dots\Hc_{\mathrm{int}}(x_n))
 \end{gather*}
 
 \begin{alignat*}{4}
@@ -26,9 +25,12 @@
 \begin{align*}
         &\Tordp(ABCD\dots WXYZ)
         = \nord{ABCD\dots WXYZ}
+        %+\\&\qquad
+        + \nord{\wick{\c1{A}\c1{B}CD\dots WXYZ}}
+        + \nord{\wick{\c1{A}B\c1{C}D\dots WXYZ}}
         +\\&\qquad
-        + \nord{\wick{\c1{A}\c1{B}CD\dots WXYZ}} + \nord{\wick{\c1{A}B\c1{C}D\dots WXYZ}} + \dots + \nord{\wick{ABCD\dots WX\c1{Y}\c1{Z}}}
-        +\\&\qquad
+        + \dots + \nord{\wick{ABCD\dots WX\c1{Y}\c1{Z}}}
+        %+\\&\qquad
         + \nord{\wick{\c1{A}\c1{B}\c1{C}\c1{D}\dots WXYZ}} + \dots + \nord{\wick{ABCD\dots \c1{W}\c1{X}\c1{Y}\c1{Z}}}
         + \dots
 \end{align*}
