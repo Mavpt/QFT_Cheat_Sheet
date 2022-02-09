@@ -1,0 +1,30 @@
+\begin{gather*}
+        \Lc = \nord{\partial^\mu\varphi^\dagger\partial_\mu\varphi - m^2\varphi^\dagger\varphi}
+        \qquad
+        \pi = \dot{\varphi}^\dagger
+        \quad
+        \pi^\dagger = \dot{\varphi}
+        \qquad
+        \comm{a_\pm(k)}{a_\pm^\dagger(k')}
+        %\comm{a_+(p)}{a_+^\dagger(q)}
+        %= \comm{a_-(p)}{a_-^\dagger(q)}
+        = \Tdelta(k-k')
+        \\
+        \comm{\varphi(\va{x},t)}{\pi(\va{y},t)}
+        = \comm{\varphi^\dagger(\va{x},t)}{\pi^\dagger(\va{y},t)}
+        = i\Ddelta[3](\va{x}-\va{y})
+        \\
+        \varphi(x)
+        = \varphi^+(x) + \varphi^-(x)
+        = \int\Tdd{k} \qty[a_+(k)e^{-ik\cdot x} + a_-^\dagger(k)e^{+ik\cdot x}]
+        \\
+        \varphi^\dagger(x)
+        = \varphi^{+\dagger}(x) + \varphi^{-\dagger}(x)
+        = \int\Tdd{k} \qty[a_-(k)e^{-ik\cdot x} + a_+^\dagger(k)e^{+ik\cdot x}]
+        \\
+        \ket{p^+} = a_+^\dagger(p)\ket{0}
+        \qquad
+        \ket{p^-} = a_-^\dagger(p)\ket{0}
+        \qquad
+        \ket{p_1^+,p_2^-} = a_-^\dagger(p_2)a_+^\dagger(p_1)\ket{0}
+\end{gather*}

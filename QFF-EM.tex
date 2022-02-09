@@ -1,0 +1,28 @@
+\begin{gather*}
+        \Lc = -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} - \frac{1}{2\xi}\qty(\partial\cdot A)^2
+        \qquad
+        %\pi^\mu = \pdv{\Lc}{\dot{A}_\mu} = F^{\mu0} - \frac{g^{\mu0}}{\xi}\qty(\partial\cdot A)
+        \pi^\mu = F^{\mu0} - \frac{g^{\mu0}}{\xi}\qty(\partial\cdot A)
+        \qquad
+        \pi^0 = -\frac{1}{\xi}\qty(\partial\cdot A)
+        \quad
+        \pi^k = E^k
+        \\
+        \comm{A_\mu(\va{x},t)}{A_\nu(\va{y},t)}
+        = \comm{\dot{A}_\mu(\va{x},t)}{\dot{A}_\nu(\va{y},t)}
+        = 0
+        \qquad
+        \comm{\dot{A}_\mu(\va{y},t)}{A_\nu(\va{x},t)}
+        = ig_{\mu\nu}\Ddelta[3](\va{x}-\va{y})
+        \\
+        A^\mu(x)
+        = A_\mu^+(x) + A_\mu^-(x)
+        = \int\Tdd{k} \sum_{\lambda=0}^3\qty[a(k,\lambda)\epsilon^\mu(k,\lambda)e^{-ik\cdot x} + a^\dagger(k,\lambda)\epsilon^{\mu *}(k,\lambda)e^{+ik\cdot x}]
+        \\
+        \comm{\dot{a}(k,\lambda)}{a^\dagger(k',\lambda')}
+        = - g^{\lambda\lambda'}\Tdelta(k-k')
+        \qquad
+        A^+(a) \text{ destroys } \ce{\gamma}
+        \quad
+        A^-(a^\dagger) \text{ creates } \ce{\gamma}
+\end{gather*}
