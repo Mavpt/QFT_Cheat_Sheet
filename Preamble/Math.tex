@@ -82,10 +82,12 @@
   {\boldsymbol{:}\mathrel{#1}\boldsymbol{:}}%
 }
 
-\newcommand*{\Tordp}[1]{%
-  {\symbf{T}\qty[#1]}%
-}
+\newcommand*{\Tdd}[1]{\widetilde{\dd{#1}}}
+
+\DeclareMathOperator{\TimeOrderedProduct}{\symbf{T}}
+\DeclareDocumentCommand\Tordp{}{\trigbraces{\TimeOrderedProduct}}
 
 \DeclareMathOperator{\DiracDelta}{\mbox{\(\delta\)}}
 \DeclareDocumentCommand\Ddelta{}{\trigbraces{\DiracDelta}}
-%\DeclareDocumentCommand\Ddelta{}{\trigbraces{\DiracDelta}}
+\DeclareMathOperator{\TildeDiracDelta}{\tilde{\mbox{\(\delta\)}}}
+\DeclareDocumentCommand\Tdelta{}{\trigbraces{\TildeDiracDelta}}
