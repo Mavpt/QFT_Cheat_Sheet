@@ -1,0 +1,32 @@
+\begin{gather*}
+        S
+        = \int_{t_i}^{t_f}L\dd{t}
+        = \int\dd[4]{x} \Lc
+        \qquad
+        L = \int\dd[3]{\va{x}}\Lc(\phi,\partial_\mu\phi)
+        \qquad
+        \pdv{\Lc}{\phi_i} - \partial_\mu{\pdv{\Lc}{\qty(\partial_\mu \phi_i)}} = 0
+        \\
+        H = \int\dd[3]{\va{x}}\Hc
+        \qquad
+        \Hc = \sum_i\Pi_i(x)\partial_0\phi_i(x) - \Lc
+        \qquad
+        \Pi_i(x) = \pdv{\Lc}{\qty(\partial_0 \phi_i(x))}
+        \\
+        \dot{\psi} = \pdv{\Hc}{\Pi} - \divergence{\pdv{\Hc}{(\grad{\Pi})}}
+        \qquad
+        \dot{\Pi} = -\pdv{\Hc}{\psi} + \divergence{\pdv{\Hc}{(\grad{\psi})}}
+        \\
+        \delta\Lc = \Lc' - \Lc = \partial_\mu C^\mu
+\qquad
+        J^\mu = C^\mu - \pdv{\Lc}{\partial_\mu\phi}\delta\phi
+        \qquad
+        \partial_\mu J^\mu = \pdv{J^0}{t} + \divergence{\va{J}} = 0
+        \\
+        Q = \int\dd[3]{\va{x}} J^0
+        \qquad
+        \dv{Q}{t} = 0
+        \qquad
+        A^\mu \to A^\mu + \partial^\mu\lambda
+\end{gather*}
+Ward identity: $k_\mu \Mc^\mu=0$, where $\Mc=\epsilon_\mu \Mc^\mu$. Photon polarizations $\epsilon$ parallel to its direction of propagation don't contribute to the scattering amplitude.
