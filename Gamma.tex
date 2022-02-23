@@ -21,9 +21,19 @@
         = -i\gamma_0\gamma_1\gamma_2\gamma_3
         = -\frac{i}{4!}\epsilon^{\alpha\beta\gamma\delta} \gamma^\alpha\gamma^\beta\gamma^\gamma\gamma^\delta
         \quad
-        \\
         \sigma^{\mu\nu} = \frac{i}{2}\comm{\gamma^\mu}{\gamma^\nu}
-        \implies \comm{\gamma^\mu}{\gamma^\nu} = -2i\sigma^{\mu\nu}
+        \\
+        \slashed{A} = A^\mu\gamma_\mu
+        \quad
+        \gamma^\mu\gamma_\mu = 4
+        \quad
+        \gamma^\mu\gamma^\nu\gamma_\mu = -2\gamma^\nu
+        \quad
+        \gamma^\mu\gamma^\nu\gamma^\rho\gamma_\mu = 4g^{\nu\rho}
+        \quad
+        \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma_\mu = -2\gamma^\sigma\gamma^\rho\gamma^\nu
+        \\
+        \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^\pi\gamma_\mu = 2\qty[\gamma^\pi\gamma^\nu\gamma^\rho\gamma^\sigma + \gamma^\sigma\gamma^\rho\gamma^\nu\gamma^\pi]
         \qquad
         \acomm{\gamma_5}{\gamma^\mu} = 0
         \qquad
@@ -42,6 +52,8 @@
         \quad
         \qty(\gamma^5)^2 = \1
         \\
+        \overline{\psi} = \psi^\dagger\gamma^0
+        \qquad
         \overline{\Gamma} = \gamma^0\Gamma^\dagger\gamma^0
         \qquad
         \overline{\gamma_5} = -\gamma_5
@@ -51,59 +63,4 @@
         \overline{\gamma^\mu\gamma_5} = \gamma^\mu\gamma_5
         \qquad
         \overline{\sigma^{\mu\nu}} = \sigma^{\mu\nu}
-\end{gather*}
-
-\resizebox{\linewidth}{!}{\begin{tabular}{|ccccc|}\specialrule{\cmidrulewidth}{0pt}{0pt}
-        $\1$
-            &$\gamma_5$
-            &$\gamma^\mu$
-            &$\gamma_5\gamma^\mu$
-            &$\sigma^{\mu\nu}$
-        \\
-        $\gamma_5$
-            &$\1$
-            &$+\gamma_5\gamma^\mu$
-            &$+\gamma^\mu$
-            &$\frac{i}{2}\epsilon^{\mu\nu\pi\rho}\sigma_{\pi\rho}$
-        \\
-        $\gamma^\alpha$
-            &$-\gamma_5\gamma^\alpha$
-            &$g^{\alpha\mu} - i\sigma^{\alpha\mu}$
-            &$-\frac{1}{2}\qty(2g^{\alpha\mu}\gamma_5 + \epsilon^{\alpha\mu\pi\rho}\sigma_{\pi\rho})$
-            &$\epsilon^{\alpha\mu\nu\lambda}\gamma_5\gamma_\lambda + ig^{\alpha\mu}\gamma^\nu - ig^{\alpha\nu}\gamma^\mu$
-        \\
-        $\gamma_5\gamma^\alpha$
-            &$-\gamma^\alpha$
-            &$-\gamma^\alpha$
-            &$-\qty(g^{\alpha\mu} - i\sigma^{\alpha\mu})$
-            &$\epsilon^{\alpha\mu\nu\lambda}\gamma_\lambda + ig^{\alpha\mu}\gamma_5\gamma^\nu - ig^{\alpha\nu}\gamma_5\gamma^\mu$
-        \\
-        $\sigma^{\alpha\beta}$
-            &$\sigma^{\alpha\beta}$
-            &$\epsilon^{\alpha\beta\mu\lambda}\gamma_5\gamma_\lambda + ig^{\beta\mu}\gamma^\alpha - ig^{\alpha\mu}\gamma^\beta$
-            &$\epsilon^{\alpha\beta\mu\lambda}\gamma_\lambda + ig^{\beta\mu}\gamma_5\gamma^\alpha - ig^{\alpha\mu}\gamma_5\gamma^\beta$
-            &$i\epsilon^{\alpha\beta\mu\nu}\gamma_5 + g^{\alpha\mu}g^{\beta\nu} - g^{\alpha\nu}g^{\beta\mu} + i\qty[g^{\alpha\nu}\sigma^{\beta\mu} + g^{\beta\mu}\sigma^{\alpha\nu} - g^{\alpha\mu}\sigma^{\beta\nu} - g^{\beta\nu}\sigma^{\alpha\mu}]$
-        \\\specialrule{\cmidrulewidth}{0pt}{0pt}
-\end{tabular}}
-
-\begin{gather*}
-        \slashed{A} = A^\mu\gamma_\mu
-        \qquad
-        \gamma^\mu\gamma_\mu = 4
-        \qquad
-        %\gamma^\mu\slashed{a}\gamma_\mu = -2\slashed{a}
-        \gamma^\mu\gamma^\nu\gamma_\mu = -2\gamma^\nu
-        \qquad
-        %\gamma^\mu\slashed{a}\slashed{b}\gamma_\mu = 4a\cdot b
-        \gamma^\mu\gamma^\nu\gamma^\rho\gamma_\mu = 4g^{\nu\rho}
-        \qquad
-        %\gamma^\mu\slashed{a}\slashed{b}\slashed{c}\gamma_\mu = -2\slashed{c}\slashed{b}\slashed{a}
-        \\
-        \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma_\mu = -2\gamma^\sigma\gamma^\rho\gamma^\nu
-        \qquad
-        %\gamma^\mu\slashed{a}\slashed{b}\slashed{c}\slashed{d}\gamma_\mu = 2\qty[\slashed{d}\slashed{a}\slashed{b}\slashed{c} + \slashed{c}\slashed{b}\slashed{a}\slashed{d}]
-        \gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^\pi\gamma_\mu = 2\qty[\gamma^\pi\gamma^\nu\gamma^\rho\gamma^\sigma + \gamma^\sigma\gamma^\rho\gamma^\nu\gamma^\pi]
-        \\
-        \gamma^\mu\gamma^\nu\gamma^\rho
-        = i\epsilon^{\mu\nu\rho\lambda} \gamma_\lambda \gamma_5 + g^{\mu\nu}\gamma^\rho - g^{\mu\rho}\gamma^\nu + g^{\nu\rho}\gamma^\mu
 \end{gather*}
