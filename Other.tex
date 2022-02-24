@@ -8,7 +8,24 @@
         \qquad
         N = \sigma L_{\mathrm{int}}
         \\
-        \text{Beam Current}: I_i = N_i\cdot e\cdot f\cdot b
+        \text{Beam Current}:
+        I_i = N_i\cdot e\cdot f\cdot b
         \\
-        \text{Deviation of scattered angle from Coulomb}: \theta = \frac{13.6}{\beta p}\frac{q\Delta L}{X_0}\qty[1 + 0.0038\ln\qty(\frac{\Delta L}{X_0})]
+        \text{Bethe-Bloch}:
+        \dv{E}{x} = -Kz^2 \frac{Z}{A}\frac{1}{\beta^2}\qty[\log(\frac{2\beta^2\gamma^2 m_ec^2}{I}) - \beta^2]
+        %-4\pi\hbar^2 c^2\alpha^2 \frac{nZ}{m_e v^2}\qty[\ln(\frac{2\beta^2\gamma^2 c^2 m_e}{I_e}) - \beta^2]
+        \quad
+        I = \SI{10}{eV}\cdot Z
+        \\
+        \text{Bremsstrahlung } (\beta\gamma\sim 1000):
+        \dv{E}{x} = -\frac{4\alpha^3N_A}{m_e^2}\frac{EZ^2}{A}\ln(184.15Z^{-1/3})
+        \\
+        \text{Cherenkov}:
+        \pdv{N}{E}{x}
+        = \frac{\alpha^2z^2\sin[2](\theta_c)}{r_em_ec^2}
+        = \frac{\alpha^2z^2}{r_em_ec^2}\qty(1-\frac{1}{\beta^2n^2})
+        \approx 370z^2\sin[2](\theta_c) \unit{(eV.cm)^{-1}}
+        \\
+        \text{Deviation of scattered angle from Coulomb}:
+        \theta = \frac{13.6}{\beta p}\frac{q\Delta L}{X_0}\qty[1 + 0.0038\ln\qty(\frac{\Delta L}{X_0})]
 \end{gather*}
